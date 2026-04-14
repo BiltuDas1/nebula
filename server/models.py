@@ -8,3 +8,10 @@ class User(Model):
     email = fields.CharField(max_length=255, unique=True)
     username = fields.CharField(max_length=100, unique=True)
     password = fields.CharField(max_length=255)
+
+
+class Workspace(Model):
+    id = fields.IntField(pk=True)
+    workspaceId = fields.CharField(max_length=255, unique=True)
+    name = fields.CharField(max_length=100)
+    password = fields.CharField(max_length=255)

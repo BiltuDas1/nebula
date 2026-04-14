@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import auth
+from routes import auth, workspace
 from tortoise.contrib.fastapi import register_tortoise
 from dotenv import load_dotenv
 import os
@@ -7,9 +7,10 @@ import os
 load_dotenv()
 
 app = FastAPI()
-
+from routes.workspace import router as workspace_router
 app.include_router(auth.router)
-
+app.include_router(workspace.router, prefix="/api/v1/workspace")
+app.include_router(workspace_router, prefix="/api/v1/workspace", tags=["workspace"])
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
