@@ -26,7 +26,7 @@ const TextEditor: React.FC = () => {
 
   const roomName = "NEBULA_PREMIUM_ROOM"; 
 
-  
+  // gitleaks:allow
   const getFileIcon = (fileName: string, type: 'file' | 'folder') => {
     if (type === 'folder') return <VscFolder style={{ color: '#dcb67a', fontSize: '18px' }} />;
     
