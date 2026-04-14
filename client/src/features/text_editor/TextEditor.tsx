@@ -26,7 +26,7 @@ const TextEditor: React.FC = () => {
 
   const roomName = "NEBULA_PREMIUM_ROOM"; 
 
-  // gitleaks:allow
+  /* gitleaks:allow */
   const getFileIcon = (fileName: string, type: 'file' | 'folder') => {
     if (type === 'folder') return <VscFolder style={{ color: '#dcb67a', fontSize: '18px' }} />;
     
@@ -166,7 +166,7 @@ const TextEditor: React.FC = () => {
                 theme="vs-dark" 
                 language="javascript" 
                 defaultValue="// Nebula: Start coding..." 
-                options={{ fontSize: 18, minimap: { enabled: true } }} // Professional large font
+                options={{ fontSize: 18, minimap: { enabled: true } }} 
               />
             ) : (
               <div className="empty-placeholder">
