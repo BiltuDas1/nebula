@@ -180,8 +180,10 @@ const TextEditor: React.FC = () => {
                 height="100%" 
                 theme="vs-dark" 
                 language="javascript" 
-                defaultValue="// Nebula: Start coding..." 
-                options={{ fontSize: 18, minimap: { enabled: true } }} 
+                options={{ 
+                  fontSize: 18, minimap: { enabled: true },
+                  placeholder: "Start coding your masterpiece here..." 
+                  }}
               />
             ) : (
               <div className="empty-placeholder">
