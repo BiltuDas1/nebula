@@ -20,6 +20,12 @@ Read [docs/requirements.md](./docs/requirements.md) for all the functional and n
 - **Backend:** FastAPI
 - **Database:** MySQL
 
+## How to Run (Server)
+
+```
+poetry run fastapi dev
+```
+
 ## Contributing
 
 Check [CONTRIBUTING.md](CONTRIBUTING.md) for more information
@@ -27,3 +33,4 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md) for more information
 ## License
 
 The Project is licensed under [MIT License](./LICENSE)
+
